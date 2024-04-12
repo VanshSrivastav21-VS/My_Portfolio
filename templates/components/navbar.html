@@ -1,0 +1,58 @@
+{% load static %}
+
+{% block css %}
+<style>
+    .navbar {
+        background-color: rgb(9, 116, 116);
+        font-family: 'Arial' sans-serif;
+    }
+
+    .navbar a img {
+        width: 30px;
+        margin-right: 1rem;
+
+    }
+
+    .navbar .collapse {
+        justify-content: end;
+        align-items: end;
+        font-weight: bold;
+    }
+</style>
+{% endblock css %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static '/images/logo.png' %}" alt="logo img"><b>Vansh Srivastav</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                    <a class="nav-link" href="{% url 'resume' %}">Resume</a>
+                    <a class="nav-link" href="{% url 'skills' %}">Skills</a>
+                    <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
+{% endblock body %}
