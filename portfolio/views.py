@@ -10,14 +10,11 @@ def home(request):
 def about(request):
     return render(request, 'portfolio/about.html')
 
-def resume(request):
-    return render(request, 'portfolio/resume.html')
+def services(request):
+    return render(request, 'portfolio/services.html')
 
-def skills(request):
-    return render(request, 'portfolio/skills.html')
-
-def projects(request):
-    return render(request, 'portfolio/projects.html')
+def portfolio(request):
+    return render(request, 'portfolio/portfolio.html')
 
 def contact(request):
     return render(request, 'portfolio/contact.html')
