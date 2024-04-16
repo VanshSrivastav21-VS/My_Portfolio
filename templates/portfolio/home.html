@@ -8,23 +8,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static '/CSS/home.css' %}">
     <title>Home Page</title>
 </head>
 
 <body>
-    <section id="home">
-        <img src="{% static '/images/profilelogo.png' %}" alt="">
-        <div class="main">
-            <h1 class="headings">
-                I AM <br />
-                VANSH SRIVASTAV
-            </h1>
-            <h2>Website Developer</h2>
-            <br />
-            <button class="btn"><a href="{% url 'contact' %}">Contact Me</a></button>
+    <!-- Header Section -->
+    <section class="p-4 p-md-5 mb-4">
+        <div class="row">
+            <div class="main-slide col-2">
+                <div class="content">
+                    <p>🌟 Website Developer </p>
+                    <h1>Hello! I'am</h1>
+                    <h1>Vansh Srivastav</h1>
+                    <p class="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non nisi rem
+                        quas explicabo
+                        consectetur excepturi, voluptatum nobis, quis dicta vero adipisci saepe soluta perferendis quam
+                        molestiae, accusantium voluptates velit.</p>
+                    <p><a class="btn" href="{% url 'contact' %}">Contact me</a></p>
+                </div>
+            </div>
+            <div class="col-2">
+                <img class="bd-placeholder-img" src="{% static '/images/aboutimage.png' %}">
+            </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section class="p-4 p-md-5 mb-4" id="about">
+        <div class="row">
+            <h1 class="heading">About me</h1>
+            <div class="col-2">
+                <img class="bd-placeholder-img" src="{% static '/images/aboutimage.png' %}">
+            </div>
+            <div class="main-slide col-2">
+                <div class="about-content">
+                    <p>My name is <span>Vansh Srivastav</span></p>
+                    <p class="about-discription">Hi! I am a Learner. I am a person who is positive about every aspect of
+                        life.
+                        Always curious to learn new things. My aim is to become a knowledgeable person and in a
+                        respectable position.
+                    </p>
+                    <div class="bio">
+                        <h5>Name<p>Vansh Srivastav</p>
+                        </h5>
+                        <h5>Phone<p>+91 70807 35344</p>
+                        </h5>
+                    </div>
+                    <div class="bio">
+                        <h5>Email<p>vanshsrivastav@gmail.com</p>
+                        </h5>
+                    </div>
+                    <div class="education">
+                        <h5>Education</h5>
+                        <p>Bachelor of Computer Application in Veer Bahadur Singh Purvanchal University Jaunpur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h1 class="heading">My Skills</h1>
+        <div class="skill">
+            <div class="skill-html">
+                <h2>HTML</h2>
+                <div class="skill-bar">
+                    <div class="skill-level html">95%</div>
+                </div>
+            </div>
+            <div class="skill-css">
+                <h2>CSS</h2>
+                <div class="skill-bar">
+                    <div class="skill-level css">90%</div>
+                </div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-html">
+                <h2>Python</h2>
+                <div class="skill-bar">
+                    <div class="skill-level python">75%</div>
+                </div>
+            </div>
+            <div class="skill-css">
+                <h2>Javascript</h2>
+                <div class="skill-bar">
+                    <div class="skill-level javascript">80%</div>
+                </div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-html">
+                <h2>React</h2>
+                <div class="skill-bar">
+                    <div class="skill-level react">60%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
 </body>
 
 </html>

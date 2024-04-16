@@ -1,0 +1,146 @@
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.col-2 {
+    min-width: 400px;
+}
+
+.col-2 img {
+    width: 100%;
+    border: 0 2px 10px rgb(7, 158, 204);
+    box-shadow: 0 0 10px 5px rgb(7, 158, 204);
+    transition: 1s ease;
+}
+.col-2 img:hover{
+    -webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
+
+.main-slide .content p{
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 140px;
+    height: 50px;
+    font-weight: bold;
+    color: aliceblue;
+    line-height: 40px;
+    background-color: rgb(15, 157, 182);
+    border-radius: 5px;
+    border: 0 2px 10px rgb(7, 158, 204);
+    box-shadow: 0 2px 10px rgb(7, 158, 204);
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: white;
+    box-shadow: 0 2px 15px 0 2px 10px rgb(7, 158, 204);
+    border:0 2px 10px rgb(7, 158, 204);
+    color: rgb(15, 157, 182);
+}
+
+/*about section*/
+.row .heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: century;
+    font-weight: 600;
+}
+
+.main-slide .about-content span{
+    color: rgb(15, 157, 182);
+    font-size: 16px;
+    font-weight: 600;
+}
+.main-slide .about-content .about-discription{
+    line-height: 2;
+}
+
+.main-slide .about-content .bio{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: rgb(15, 157, 182);
+}
+.main-slide .about-content .bio p{
+    color: white;
+    font-size: 1rem;
+}
+.main-slide .about-content .education{
+    text-align: center;
+    color: rgb(15, 157, 182);
+}
+.main-slide .about-content .education p{
+    color: white;
+}
+
+/**Skills Section**/
+.skills {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.skills h1 {
+    text-align: center;
+    font-family: century;
+    margin-bottom: 2rem;   
+}
+.skill {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.skill h2 {
+    font-size: 25px;
+    margin: 0;
+}
+.html {
+    width: 95%;
+    background-color: #e34c26;
+}
+.skill-bar {
+    background-color: #f0f0f0;
+    height: 20px;
+    width: 30rem;
+    border-radius: 10px;
+}   
+.skill-level {
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.skill-css{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 2rem;
+}
+.css {
+    width: 90%;
+    background-color:#2965f1;
+}
+.python {
+    width: 75%;
+    background-color:#dab40c;
+}
+.javascript {
+    width: 80%;
+    background-color: #ac342b;
+}
+.react {
+    width: 60%;
+    background-color: #c0a916;
+}

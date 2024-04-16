@@ -8,32 +8,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static '/CSS/style.css' %}">
-    <title>Vansh Portfolio</title>
+    <link rel="stylesheet" href="{% static '/CSS/navbar.css' %}">
+    <title>Navbar</title>
 </head>
 
 <body>
     <nav class="navbar">
         <ul>
             <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'about' %}">About Me</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
             <li><a href="{% url 'services' %}">Service</a></li>
             <li><a href="{% url 'contact' %}">Contact Me</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
         </ul>
     </nav>
-
-    
-
-   
-
-   
-
-    
-
-   
-
-  
 </body>
 
 </html>
