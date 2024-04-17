@@ -25,7 +25,7 @@ transition: 1s ease;
 
 .main-slide .content p{
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 2;
     margin-top: 20px;
 }
 
@@ -88,8 +88,9 @@ transition: 1s ease;
 
 /**Skills Section**/
 .skills {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
+
 }
 .skills h1 {
     text-align: center;
@@ -144,3 +145,51 @@ transition: 1s ease;
     width: 60%;
     background-color: #c0a916;
 }
+
+/**Service Section**/
+.services h1 {
+    text-align: center;
+    font-family: century;
+    margin-top: 2rem;
+    margin-bottom: 2rem;   
+}
+#services {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 2px solid #4ea5c7;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all.8s;
+
+}
+
+.box:hover {
+    background-position: left bottom;
+    color: white;                       ;
+    box-shadow: 0 0 20px rgb(9, 172, 221);
+}
+
+.box img {
+    width: 80px;
+    height: 80px;
+}
+
+
