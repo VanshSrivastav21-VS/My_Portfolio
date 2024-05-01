@@ -1,6 +1,8 @@
 {% extends 'layout/base.html' %}
 {% load static %}
 
+
+
 {% block body %}
 <!DOCTYPE html>
 <html lang="en">
@@ -8,146 +10,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/CSS/home.css' %}">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+    <title>Document</title>
 </head>
 
 <body>
-    <!-- Header Section -->
-    <section class="p-4 p-md-5 mb-4">
-        <div class="row">
-            <div class="main-slide col-2">
-                <div class="content">
-                    <p>🌟 Website Developer </p>
-                    <h1>Hello! I'am</h1>
-                    <h1>Vansh Srivastav</h1>
-                    <p class="discription">Hi! I am a Learner. I am a person who is positive about every aspect of
-                        life.
-                        Always curious to learn new things. My aim is to become a knowledgeable person and in a
-                        respectable position.</p>
-                    <p><a class="btn" href="{% url 'contact' %}">Contact me</a></p>
+    <div class="container">
+        <!-- Header Section -->
+        <section class="p-4 p-md-5 mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content">
+                        <p>🌟 Website Developer </p>
+                        <h2>Hello! I'm</h2>
+                        <h2>Vansh Srivastav</h2>
+                        <p class="discription">Hi! I am a Learner. I am a person who is positive about every aspect of
+                            life. Always curious to learn new things. My aim is to become a knowledgeable person and in
+                            a
+                            respectable position.
+                        </p>
+                        <p><a class="btn" href="{% url 'contact' %}">Contact me</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="circle-img" src="{% static '/images/headerimg.png' %}" alt="About Image">
                 </div>
             </div>
-            <div class="col-2">
-                <img class="bd-placeholder-img" src="{% static '/images/aboutimage.png' %}">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="p-4 p-md-5 mb-4" id="about">
-        <div class="row">
+        <!-- About Section -->
+        <section class="p-4 p-md-5 mb-4" id="about">
             <h1 class="heading">About me</h1>
-            <div class="col-2">
-                <img class="bd-placeholder-img" src="{% static '/images/aboutimage.png' %}">
-            </div>
-            <div class="main-slide col-2">
-                <div class="about-content">
-                    <p>My name is <span>Vansh Srivastav</span></p>
-                    <p class="about-discription">Hi! I am a Learner. I am a person who is positive about every aspect of
-                        life.
-                        Always curious to learn new things. My aim is to become a knowledgeable person and in a
-                        respectable position.
-                    </p>
-                    <div class="bio">
-                        <h5>Name<p>Vansh Srivastav</p>
-                        </h5>
-                        <h5>Phone<p>+91 70807 35344</p>
-                        </h5>
+            <div class="section-row">
+                <div class="col-md-6">
+                    <img class="square-img" src="{% static '/images/headerimg.png' %}" alt="About Image">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <p>My name is <span>Vansh Srivastav</span></p>
+                        <p class="about-discription">Hi! I am a Learner. I am a person who is positive about every
+                            aspect
+                            of life. Always curious to learn new things. My aim is to become a knowledgeable person and
+                            in a
+                            respectable position.
+                        </p>
+                        <div class="bio">
+                            <div class="name">
+                                <h5>Name</h5>
+                                <p>Vansh Srivastav</p>
+                            </div>
+                            <div class="phone">
+                                <h5>Phone</h5>
+                                <p>+91 70807 35344</p>
+                            </div>
+                        </div>
+                        <div class="bio">
+                            <div class="email">
+                                <h5>Email</h5>
+                                <p>vanshsrivastav@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <h5>Education</h5>
+                            <p>Bachelor of Computer Application in Veer Bahadur Singh Purvanchal University Jaunpur</p>
+                        </div>
                     </div>
-                    <div class="bio">
-                        <h5>Email<p>vanshsrivastav@gmail.com</p>
-                        </h5>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="p-4 p-md-5 mb-4" class="inner">
+            <h1 class="heading">My Skills</h1>
+            <div class="skill-container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img col-md-6">
+                            <img src="{% static '/images/html.png' %}" alt="" class="skills-icon">
+                        </div>
+                        <h3>HTML</h3>
                     </div>
-                    <div class="education">
-                        <h5>Education</h5>
-                        <p>Bachelor of Computer Application in Veer Bahadur Singh Purvanchal University Jaunpur</p>
+                    <p>HyperText Markup Language or HTML is the standard markup language for documents designed to
+                        be
+                        displayed in a web browser...</p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img col-md-6">
+                            <img src="{% static '/images/css.png' %}" alt="" class="skills-icon">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    p>of a document written in a markup language such as HTML or XML (including XML dialects such
+                    as
+                    SVG, MathML or XHTML)...</p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img col-md-6">
+                            <img src="{% static '/images/python.png' %}" alt="" class="skills-icon">
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                    <p>Python was invented in the late 1980s[41] by Guido van Rossum at Centrum Wiskunde &
+                        Informatica
+                        (CWI) in the Netherlands...</p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img col-md-6">
+                            <img src="{% static '/images/javascript.png' %}" alt="" class="skills-icon">
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <p>The first popular web browser with a graphical user interface, Mosaic, was released in 1993.
+                        Accessible to non-technical people...</p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img col-md-6">
+                            <img src="{% static '/images/react.png' %}" alt="" class="skills-icon">
+                        </div>
+                        <h3>React</h3>
+                    </div>
+                    <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript
+                        library for building user interfaces based on components...</p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img col-md-6">
+                            <img src="{% static '/images/mysql.png' %}" alt="" class="skills-icon">
+                        </div>
+                        <h3>My SQL</h3>
+                    </div>
+                    <p>MySQL is a widely used relational database management system (RDBMS). MySQL is free and
+                        open-source...</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section class="projec-row">
+            <div class="project-container">
+                <div class="col-md-6">
+                    <div class="h-100 p-5  rounded-3">
+                        <h2>Bakery Project</h2>
+                        <p>We make a Bakery Project using HTML, CSS, Bootstrap and JavaScript.
+                            During my 3-month training Django Web Development in DIGIPODIUM's.
+                            This project saves the user's details in database system. Any user can
+                            order food and book table from home.</p>
+                        <p><a class="btn" href="">My Project</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="scroll-container h-100 p-5 bg-body-tertiary border rounded-3">
+                        <img src="{% static '/images/androiddeveloper.jpg' %}" alt="Cinque Terre" width="600" height="400">
+                        <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+                        <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                        <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h1 class="heading">My Skills</h1>
-        <div class="skill">
-            <div class="skill-html">
-                <h2>HTML</h2>
-                <div class="skill-bar">
-                    <div class="skill-level html">95%</div>
+            <div class="project-container">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                        <h2>Add borders</h2>
+                        <p>Or, keep it light and add a border for some added definition to the boundaries of your
+                            content.
+                            Be sure to look under the hood at the source HTML here as we've adjusted the alignment and
+                            sizing of both column's content for equal-height.</p>
+                        <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5  rounded-3">
+                        <h2>Change the background</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron
+                            look.
+                            Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-light" type="button">Example button</button>
+                    </div>
                 </div>
             </div>
-            <div class="skill-css">
-                <h2>CSS</h2>
-                <div class="skill-bar">
-                    <div class="skill-level css">90%</div>
-                </div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-html">
-                <h2>Python</h2>
-                <div class="skill-bar">
-                    <div class="skill-level python">75%</div>
-                </div>
-            </div>
-            <div class="skill-css">
-                <h2>Javascript</h2>
-                <div class="skill-bar">
-                    <div class="skill-level javascript">80%</div>
-                </div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-html">
-                <h2>React</h2>
-                <div class="skill-bar">
-                    <div class="skill-level react">60%</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Section -->
-    <section class="services" id="services">
-        <h1 class="headings">SERVICES</h1>
-        <div class="row">
-            <div class="box">
-                <img src="{% static '/images/websitedeveloper.jpg' %}" alt="" />
-                <h1 class="headings">Website Developer</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
-                    odio molestias adipisci a. Tempora omnis labore excepturi, sequi
-                    nostrum, quae distinctio dicta quo illo rem natus. A unde laboriosam
-                    voluptates.
-                </p>
-            </div>
-            <div class="box">
-                <img src="{% static '/images/websitedesign.jpg' %}" alt="" />
-                <h1 class="headings">Website Design</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
-                    odio molestias adipisci a. Tempora omnis labore excepturi, sequi
-                    nostrum, quae distinctio dicta quo illo rem natus. A unde laboriosam
-                    voluptates.
-                </p>
-            </div>
-            <div class="box">
-                <img src="{% static '/images/androiddeveloper.jpg' %}" alt="" />
-                <h1 class="headings">Android Application</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
-                    odio molestias adipisci a. Tempora omnis labore excepturi, sequi
-                    nostrum, quae distinctio dicta quo illo rem natus. A unde laboriosam
-                    voluptates.
-                </p>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-      
-
+    </div>
 </body>
 
 </html>

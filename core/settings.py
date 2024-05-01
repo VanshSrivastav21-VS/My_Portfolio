@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolio',
+    'contactenquiry',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,5 @@ MEDIA_ROOT = BASE_DIR.joinpath("media")
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
