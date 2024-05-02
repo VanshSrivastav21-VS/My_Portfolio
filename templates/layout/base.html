@@ -21,10 +21,16 @@
 
     {% block css %}
     <style>
+        :root {
+            --bg-color: #081b29;
+            --second-bg-color: #112e42;
+            --text-color: #ededed;
+            --main-color: #00abf0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: black;
-            color: white;
+            background: var(--bg-color);
+            color: var(--text-color);
         }
     </style>
     {% endblock css %}

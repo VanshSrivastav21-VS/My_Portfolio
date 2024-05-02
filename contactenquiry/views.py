@@ -3,7 +3,7 @@ from contactenquiry .models import contactEnquiry
 
 
 def contact(request):
-    return render(request,'portfolio/contact.html')
+    return render(request,'portfolio/home.html')
 
 def saveEnquiry(request):
     if request.method == "POST":
@@ -13,7 +13,7 @@ def saveEnquiry(request):
         en = contactEnquiry(name=name, email=email, message=message)
         # Assuming 'contactEnquiry' is your model for storing contact inquiries
         en.save()  # Save the object to the database
-    return render(request, 'portfolio/contact.html')
+    return render(request, 'portfolio/home.html')
 
 
     

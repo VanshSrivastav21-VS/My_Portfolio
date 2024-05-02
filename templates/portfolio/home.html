@@ -2,6 +2,12 @@
 {% load static %}
 
 
+{% block css %}
+
+{% endblock css %}
+
+
+
 
 {% block body %}
 <!DOCTYPE html>
@@ -24,12 +30,22 @@
                         <p>🌟 Website Developer </p>
                         <h2>Hello! I'm</h2>
                         <h2>Vansh Srivastav</h2>
-                        <p class="discription">Hi! I am a Learner. I am a person who is positive about every aspect of
-                            life. Always curious to learn new things. My aim is to become a knowledgeable person and in
-                            a
-                            respectable position.
+                        <p class="discription">Hi! I am a dedicated BCA graduate with hands-on experience in HTML, CSS,
+                            Bootstrap, JavaScript, and Django Web Framework. Passionate about
+                            creating efficient web solutions, such as my Bakery Project, I am eager to
+                            contribute positively in a dynamic work environment while continuously
+                            enhancing my skills.
                         </p>
-                        <p><a class="btn" href="{% url 'contact' %}">Contact me</a></p>
+                        <!-- <p><a class="btn" href="{% url 'contact' %}">Contact me</a></p> -->
+                    </div>
+                    <div class="content-btn">
+                        <a class="btn" href="{% url 'contact' %}">Contact me</a>
+                        <a class="btn" href="{% url 'contact' %}">Contact me</a>
+                    </div>
+
+                    <div class="content-icon">
+                        <a href="#"></a>
+                        <a href="#"></a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -41,46 +57,97 @@
         <!-- About Section -->
         <section class="p-4 p-md-5 mb-4" id="about">
             <h1 class="heading">About me</h1>
-            <div class="section-row">
-                <div class="col-md-6">
-                    <img class="square-img" src="{% static '/images/headerimg.png' %}" alt="About Image">
-                </div>
-                <div class="col-md-6">
-                    <div class="about-content">
-                        <p>My name is <span>Vansh Srivastav</span></p>
-                        <p class="about-discription">Hi! I am a Learner. I am a person who is positive about every
-                            aspect
-                            of life. Always curious to learn new things. My aim is to become a knowledgeable person and
-                            in a
-                            respectable position.
-                        </p>
-                        <div class="bio">
-                            <div class="name">
-                                <h5>Name</h5>
-                                <p>Vansh Srivastav</p>
-                            </div>
-                            <div class="phone">
-                                <h5>Phone</h5>
-                                <p>+91 70807 35344</p>
+            <div class="about-img">
+                <img src="{% static '/images/aboutimage.png' %}" alt="">
+            </div>
+            <div class="about-content">
+                <h3>Frontend Developer</h3>
+                <p>Hi! I am a dedicated BCA graduate with hands-on experience in HTML, CSS,
+                    Bootstrap, JavaScript, and Django Web Framework. Passionate about
+                    creating efficient web solutions, such as my Bakery Project, I am eager to
+                    contribute positively in a dynamic work environment while continuously
+                    enhancing my skills.</p>
+            </div>
+            <div class="about-btn">
+                <a class="btn" href="{% url 'contact' %}">Contact me</a>
+            </div>
+
+        </section>
+
+        <!-- Education Section -->
+        <section class="education p-4 p-md-5 mb-4" id="education">
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title">Education</h3>
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="edu_content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i>2021 - 2024</div>
+                                <h1>Master Degree - University</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui eius et beatae
+                                    ut? Reiciendis provident reprehenderit maiores! Eligendi, voluptatem.</p>
                             </div>
                         </div>
-                        <div class="bio">
-                            <div class="email">
-                                <h5>Email</h5>
-                                <p>vanshsrivastav@gmail.com</p>
+
+                        <div class="education-content">
+                            <div class="edu_content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i>2021 - 2024</div>
+                                <h1>Master Degree - University</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui eius et beatae
+                                    ut? Reiciendis provident reprehenderit maiores! Eligendi, voluptatem.</p>
                             </div>
                         </div>
-                        <div class="education">
-                            <h5>Education</h5>
-                            <p>Bachelor of Computer Application in Veer Bahadur Singh Purvanchal University Jaunpur</p>
+
+                        <div class="education-content">
+                            <div class="edu_content">
+                                <div class="year"><i class="fa-solid fa-calendar-days"></i>2021 - 2024</div>
+                                <h1>Master Degree - University</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui eius et beatae
+                                    ut? Reiciendis provident reprehenderit maiores! Eligendi, voluptatem.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="edu_content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i>2021 - 2024</div>
+                            <h1>Master Degree - University</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui eius et beatae
+                                ut? Reiciendis provident reprehenderit maiores! Eligendi, voluptatem.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="edu_content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i>2021 - 2024</div>
+                            <h1>Master Degree - University</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui eius et beatae
+                                ut? Reiciendis provident reprehenderit maiores! Eligendi, voluptatem.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="edu_content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i>2021 - 2024</div>
+                            <h1>Master Degree - University</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui eius et beatae
+                                ut? Reiciendis provident reprehenderit maiores! Eligendi, voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
 
         <!-- Skills Section -->
-        <section class="p-4 p-md-5 mb-4" class="inner">
+        <section class="p-4 p-md-5 mb-4" class="inner" id="skills">
             <h1 class="heading">My Skills</h1>
             <div class="skill-container">
                 <div class="skill-box">
@@ -155,52 +222,61 @@
             </div>
         </section>
 
-        <!-- Project Section -->
-        <section class="projec-row">
-            <div class="project-container">
-                <div class="col-md-6">
-                    <div class="h-100 p-5  rounded-3">
-                        <h2>Bakery Project</h2>
-                        <p>We make a Bakery Project using HTML, CSS, Bootstrap and JavaScript.
-                            During my 3-month training Django Web Development in DIGIPODIUM's.
-                            This project saves the user's details in database system. Any user can
-                            order food and book table from home.</p>
-                        <p><a class="btn" href="">My Project</a></p>
-                    </div>
+        <!-- Contact Section -->
+        <section class="p-4 p-md-5 mb-4" id="contact">
+            <h1 class="heading">Contact Me</h1>
+            <div class="contact-wrapper ">
+                <!-- Left contact page -->
+                <form method="post" action="{% url 'saveenquiry' %}" role="form" novalidate class="bv-form contact-form"
+                  id="contact-form">
+                  {% csrf_token %}
+                  {{ form.as_p }}
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Name" name="name" value="" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control textarea-control" rows="5" placeholder="Message" name="message"
+                      required></textarea>
+                  </div>
+                  <button class="send-button" type="submit">Send</button>
+                </form>
+            
+                <!-- Right contact page -->
+                <div class="direct-contact-container">
+                  <ul class="contact-list">
+                    <li class="list-item">
+                      <i class="fa fa-map-marker fa-2x"></i>
+                      <span>Jaunpur, UP</span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-phone fa-2x"></i>
+                      <span>
+                        <a href="tel:7080735344" title="Give me a call">+91 70807 35344</a>
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-envelope fa-2x"></i>
+                      <span>
+                        <a href="mailto:vanshsrivastavjnp@gmail.com" title="Send me an email">vanshsrivastavjnp@gmail.com</a>
+                      </span>
+                    </li>
+                  </ul>
+                  <div class="social-media">
+                    <ul class="social-media-list">
+                      <li><a href="https://github.com/VanshSrivastav21-VS"><i class="fa-brands fa-github"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/vansh-srivastav-24550828b/"><i class="fa-brands fa-linkedin"></i></a>
+                      </li>
+                      <li><a href="https://www.instagram.com/vanshrivastav._.4u?igsh=eXd0NXh6MndnZ2Q1"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
                 </div>
-                <div class="col-md-6">
-                    <div class="scroll-container h-100 p-5 bg-body-tertiary border rounded-3">
-                        <img src="{% static '/images/androiddeveloper.jpg' %}" alt="Cinque Terre" width="600" height="400">
-                        <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-                        <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-                        <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-container">
-                <div class="col-md-6">
-                    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                        <h2>Add borders</h2>
-                        <p>Or, keep it light and add a border for some added definition to the boundaries of your
-                            content.
-                            Be sure to look under the hood at the source HTML here as we've adjusted the alignment and
-                            sizing of both column's content for equal-height.</p>
-                        <button class="btn btn-outline-secondary" type="button">Example button</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="h-100 p-5  rounded-3">
-                        <h2>Change the background</h2>
-                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron
-                            look.
-                            Then, mix and match with additional component themes and more.</p>
-                        <button class="btn btn-outline-light" type="button">Example button</button>
-                    </div>
-                </div>
-            </div>
+              </div>
         </section>
-
 
     </div>
 </body>
